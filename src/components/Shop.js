@@ -20,6 +20,7 @@ const Title = styled.h1`
   font-weight: 200;
   color: ${(props) => props.theme.text};
 
+  text-shadow: 1px 1px 1px ${(props) => props.theme.body};
   position: absolute;
   top: 1rem;
   left: 5%;
@@ -33,7 +34,39 @@ const Left = styled.div`
 
   min-height: 100vh;
   z-index: 5;
+  position: fixed;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  p{
+  font-size: ${(props) => props.theme.fontlg};
+  font-weight: 300;
+  width: 80%;
+
+
+  }
 `;
+
+const Right = styled.div`
+    position: absolute;
+    left: 35%;
+    min-height: 100vh;
+    padding-left: 30%;
+    background-color: ${(props) => props.theme.grey};
+    width: 65%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    h1{
+        width: 5rem;
+        margin: 0 2rem;
+    }
+
+
+`
 
 const Shop = () => {
   return (
@@ -56,6 +89,17 @@ const Shop = () => {
           country and look different.
         </p>
       </Left>
+      <Right>
+        <h1>Images</h1>
+        <h1>Images</h1>
+        <h1>Images</h1>
+        <h1>Images</h1>
+        <h1>Images</h1>
+        <h1>Images</h1>
+        <h1>Images</h1>
+        <h1>Images</h1>
+
+      </Right>
     </Section>
   );
 };
